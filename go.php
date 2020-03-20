@@ -7,10 +7,11 @@ $blokasi2 = file_get_contents($filel2);
 $clokasi2 = fetch_value($blokasi2, 'Kota:', ';');
 
 $filename = "readme/data.ini";
-$urlvoucher = "http://www.hj-travels.com/data/files/v2.html";
+$urlvoucher = "http://www.hj-travels.com/data/files/v3.html";
 $isiv = file_get_contents($urlvoucher);
 $codevoucher = fetch_value($isiv, 'food1:', ';');
 $codevoucher2 = fetch_value($isiv, 'food2:', ';');
+$codevoucher3 = fetch_value($isiv, 'food3:', ';');
 $ridev = fetch_value($isiv, 'ride:', ';');
 $carv = fetch_value($isiv, 'car:', ';');
  
@@ -21,7 +22,8 @@ if (file_exists($filename)){
 echo "\n";
 echo "\n";
 //echo "🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰\n";
-echo color("purple","  😈    AUTO INJECT VOUCHER GOJEK VIP    😈   \n");
+//echo color("purple","  😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈   \n");
+echo color("purple","  😈  AUTO INJECT VOUCHER GOJEK JENGLOT  😈   \n");
 echo color("purple","  😈  Copyright©2020 All Right Reserved  😈   \n");
 echo color("purple","  😈            ѕoeв υzυмaĸι             😈   \n");
 //echo "🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰\n";
@@ -83,17 +85,17 @@ echo "\n";
 	echo "Time:".date('[d-m-Y] [H:i:s]');
 	echo "\n";
         echo color("white","[!] Coba Masukkan Voucher 1");
-        echo "\n".color("white","[!] Tunggu dulu");
+        echo "\n".color("white","[⏳] Tunggu dulu");
         for($a=1;$a<=7;$a++){
         echo color("white",".");
-        sleep(5);
+        sleep(4);
         }
 	sleep(1);
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"'.$codevoucher.'"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         	echo "\n".color("purple","[✓] Berhasil : ".$message);
-       		goto cekk;
+       		//goto cekk;
         }else{
         echo "\n".color("red","×] Gagal : ".$message);
 	echo "\n";
@@ -103,13 +105,13 @@ echo "\n";
 	echo "Time:".date('[d-m-Y] [H:i:s]');
 		echo "\n";
 	echo color("white","[!] Coba Masukkan Voucher 2");
-        echo "\n".color("white","[!] Tunggu dulu");
+        echo "\n".color("white","[⏳] Tunggu dulu");
         for($a=1;$a<=7;$a++){
         echo color("white",".");
-        sleep(5);
+        sleep(8);
         }
         sleep(1);
-        $boba10 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"'.$codevoucher.'"}');
+        $boba10 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"'.$codevoucher2.'"}');
         $messageboba10 = fetch_value($boba10,'"message":"','"');
         if(strpos($boba10, 'Promo kamu sudah bisa dipakai.')){
         echo "\n".color("purple","[✓] Berhasil : ".$messageboba10);
@@ -123,13 +125,13 @@ echo "\n";
 	echo "Time:".date('[d-m-Y] [H:i:s]');
 	echo "\n";
         echo color("white","!] Coba Masukkan Voucher 3");
-        echo "\n".color("white","[!] Tunggu dulu");
+        echo "\n".color("white","[⏳] Tunggu dulu");
         for($a=1;$a<=7;$a++){
         echo color("white",".");
         sleep(5);
         }
         sleep(1);
-        $boba19 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"'.$codevoucher.'"}');
+        $boba19 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"'.$codevoucher2.'"}');
         $messageboba19 = fetch_value($boba19,'"message":"','"');
         if(strpos($boba19, 'Promo kamu sudah bisa dipakai.')){
         echo "\n".color("purple","[✓] Berhasil : ".$messageboba19);
@@ -146,7 +148,7 @@ echo "\n";
         //echo color("yellow","[!] Peluang terakhir Injek Voucher.....!!");
         //echo "\n";
         echo color("white","[!] Coba Masukkan Voucher 4");
-        echo "\n".color("yellow","[!] Yang ini Tunggu 5 Menit");
+        echo "\n".color("yellow","[⏳] Yang ini Tunggu 5 Menit");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(1);
@@ -161,7 +163,7 @@ echo "\n";
 	sleep(30);
 	sleep(30);
 	sleep(30);
-        $goride = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"'.$codevoucher.'"}');
+        $goride = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"'.$codevoucher2.'"}');
         $message1 = fetch_value($goride,'"message":"','"');
 	      if(strpos($goride, 'Promo kamu sudah bisa dipakai.')){
         echo "\n".color("purple","[✓] Berhasil : ".$message1);
@@ -169,19 +171,19 @@ echo "\n";
         echo "\n".color("red","[×] Gagal : ".$message1);
       	}
       
-        sleep(3);
+        sleep(2);
       	echo "\n";
         
         cekk:	
 	      echo "\n";	
 	      echo "\n";
 	      echo color("white","[!] Coba Masukkan Voucher Lain 1");
-              echo "\n".color("white","[!] Tunggu dulu");
+              echo "\n".color("white","[⏳] Tunggu dulu");
 	      	for($a=1;$a<=7;$a++){
                 echo color("white",".");
                 sleep(3);
                 }
-              $code2 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"'.$codevoucher2.'"}');
+              $code2 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"'.$codevoucher3.'"}');
               $message2 = fetch_value($code2,'"message":"','"');
               if(strpos($code2, 'Promo kamu sudah bisa dipakai.')){
         	echo "\n".color("purple","[✓] Berhasil : ".$message2);
@@ -193,7 +195,7 @@ echo "\n";
               echo "\n";	
 	            echo "\n";
               echo color("white","[!] Coba Masukkan Voucher Lain 2");
-              echo "\n".color("white","[!] Tunggu dulu");
+              echo "\n".color("white","[⏳] Tunggu dulu");
 	      	for($a=1;$a<=7;$a++){
                 echo color("white",".");
                 sleep(2);
@@ -209,7 +211,7 @@ echo "\n";
 		    echo "\n";	
 	      echo "\n";
 	      echo color("white","[!] Coba Masukkan Voucher Lain 3");
-              echo "\n".color("white","[!] Tunggu dulu");
+              echo "\n".color("white","[⏳] Tunggu dulu");
 	      	for($a=1;$a<=7;$a++){
                 echo color("white",".");
                 sleep(2);
@@ -226,7 +228,7 @@ echo "\n";
 	    echo "\n";
 	    echo "\n";
 		
-		sleep(2);
+		sleep(3);
 	
         $cekvoucher = request('/gopoints/v3/wallet/vouchers?limit=10&page=1', $token);
         $total = fetch_value($cekvoucher,'"total_vouchers":',',');
@@ -253,7 +255,7 @@ echo "\n";
 		$expired9 = getStr1('"expiry_date":"','"',$cekvoucher,'9');
 		$expired10 = getStr1('"expiry_date":"','"',$cekvoucher,'10');
 		
-        echo "\n".color("white","[!] Total voucher ada ".$total." : ");
+        echo "\n".color("white","[🎫] Total voucher ada ".$total." : ");
 	echo "\n";
 	echo "\n";
         echo color("purple","1. ".$voucher1);
@@ -301,7 +303,7 @@ echo "\n";
                 
          //echo "\n";
 		 //echo "\n";
-	 sleep(2);
+	 sleep(1);
 	 echo color("white","\n■■■■■■■■■■■■■■( SET PIN )■■■■■■■■■■■■■■");
 	 echo "\n";
          setpin:	 
