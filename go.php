@@ -21,12 +21,11 @@ if (file_exists($filename)){
 
 echo "\n";
 echo "\n";
-//echo "🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰\n";
-//echo color("purple","  😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈   \n");
-echo color("red","  ╚»★«╝        😈 ｊｅήｇ𝕝ᵒｔ 😈        ╚»★«╝   \n");
-echo color("red","  😈  Copyright©2020 All Right Reserved  😈   \n");
-echo color("red","  ╚»★«╝      😈 丂ό𝕖в Ǘℤù𝕞Ａ𝐤Ⓘ 😈    ╚»★«╝   \n");
-//echo "🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰\n";
+
+echo color("purple","𝐏𝐫𝐨𝐝𝐮𝐜𝐭 𝐍𝐚𝐦𝐞 : ﾌ乇几Ꮆㄥㄖㄒ \n");
+echo color("purple","𝐕𝐞𝐫𝐬𝐢𝐨𝐧       : ㄥ丨爪丨ㄒ乇ᗪ \n");
+echo color("purple","𝐂𝐫𝐞𝐚𝐭𝐞𝐝       : 丂ㄖ乇乃 ㄩ乙ㄩ爪卂Ҝ丨 \n");
+
 echo "\n";
 echo "\n";
 	   
