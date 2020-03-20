@@ -22,9 +22,10 @@ if (file_exists($filename)){
 echo "\n";
 echo "\n";
 
-echo color("purple","𝐏𝐫𝐨𝐝𝐮𝐜𝐭 𝐍𝐚𝐦𝐞 : ﾌ乇几Ꮆㄥㄖㄒ \n");
-echo color("purple","𝐕𝐞𝐫𝐬𝐢𝐨𝐧       : ㄥ丨爪丨ㄒ乇ᗪ \n");
-echo color("purple","𝐂𝐫𝐞𝐚𝐭𝐞𝐝       : 丂ㄖ乇乃 ㄩ乙ㄩ爪卂Ҝ丨 \n");
+echo color("purple","𝐏𝐫𝐨𝐝𝐮𝐜𝐭  : ﾌ乇几Ꮆㄥㄖㄒ   \n");
+echo color("purple","𝐕𝐞𝐫𝐬𝐢𝐨𝐧  : ㄥ丨爪丨ㄒ乇ᗪ   \n");
+echo color("purple","𝐂𝐫𝐞𝐚𝐭𝐞𝐝  : 丂ㄖ乇乃 ㄩ乙ㄩ爪卂Ҝ丨\n");
+echo color("purple","𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭©𝟐𝟎𝟐𝟎 𝐀𝐥𝐥 𝐑𝐢𝐠𝐡𝐭 𝐑𝐞𝐬𝐞𝐫𝐯𝐞𝐝 \n");
 
 echo "\n";
 echo "\n";
@@ -87,16 +88,16 @@ echo "\n";
         echo "\n".color("white","[⏳] Tunggu dulu");
         for($a=1;$a<=7;$a++){
         echo color("white",".");
-        sleep(4);
+        sleep(3);
         }
 	sleep(1);
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"'.$codevoucher.'"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
-        	echo "\n".color("purple","[✓] Berhasil : ".$message);
+        	echo "\n".color("purple","[✓] Berhasil Bray : ".$message);
        		//goto cekk;
         }else{
-        echo "\n".color("red","×] Gagal : ".$message);
+        echo "\n".color("red","×] Gagal Bray : ".$message);
 	echo "\n";
 	echo "\n";
 		
@@ -113,10 +114,10 @@ echo "\n";
         $boba10 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"'.$codevoucher2.'"}');
         $messageboba10 = fetch_value($boba10,'"message":"','"');
         if(strpos($boba10, 'Promo kamu sudah bisa dipakai.')){
-        echo "\n".color("purple","[✓] Berhasil : ".$messageboba10);
+        echo "\n".color("purple","[✓] Berhasil Bray : ".$messageboba10);
         goto cekk;
         }else{
-        echo "\n".color("red","[×] Gagal : ".$messageboba10);
+        echo "\n".color("red","[×] Gagal Bray : ".$messageboba10);
 	echo "\n";
 	echo "\n";
 		
@@ -133,10 +134,10 @@ echo "\n";
         $boba19 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"'.$codevoucher2.'"}');
         $messageboba19 = fetch_value($boba19,'"message":"','"');
         if(strpos($boba19, 'Promo kamu sudah bisa dipakai.')){
-        echo "\n".color("purple","[✓] Berhasil : ".$messageboba19);
+        echo "\n".color("purple","[✓] Berhasil Bray : ".$messageboba19);
         goto cekk;
         }else{
-        echo "\n".color("red","[×] Gagal : ".$messageboba19);
+        echo "\n".color("red","[×] Gagal Bray : ".$messageboba19);
         
 	echo "\n";
 	echo "\n";
@@ -165,9 +166,9 @@ echo "\n";
         $goride = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"'.$codevoucher2.'"}');
         $message1 = fetch_value($goride,'"message":"','"');
 	      if(strpos($goride, 'Promo kamu sudah bisa dipakai.')){
-        echo "\n".color("purple","[✓] Berhasil : ".$message1);
+        echo "\n".color("purple","[✓] Berhasil Bray : ".$message1);
       	}else{
-        echo "\n".color("red","[×] Gagal : ".$message1);
+        echo "\n".color("red","[×] Gagal Bray : ".$message1);
       	}
       
         sleep(2);
@@ -185,9 +186,9 @@ echo "\n";
               $code2 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"'.$codevoucher3.'"}');
               $message2 = fetch_value($code2,'"message":"','"');
               if(strpos($code2, 'Promo kamu sudah bisa dipakai.')){
-        	echo "\n".color("purple","[✓] Berhasil : ".$message2);
+        	echo "\n".color("purple","[✓] Berhasil Bray : ".$message2);
       	      }else{
-        	echo "\n".color("red","[×] Gagal : ".$message2);
+        	echo "\n".color("red","[×] Gagal Bray : ".$message2);
 		//$carv = $ridev;
       	      }
 			  
@@ -202,9 +203,9 @@ echo "\n";
               $code2 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"'.$ridev.'"}');
               $message2 = fetch_value($code2,'"message":"','"');
               if(strpos($code2, 'Promo kamu sudah bisa dipakai.')){
-        	echo "\n".color("purple","[✓] Berhasil : ".$message2);
+        	echo "\n".color("purple","[✓] Berhasil Bray : ".$message2);
       	      }else{
-        	echo "\n".color("red","[×] Gagal : ".$message2);
+        	echo "\n".color("red","[×] Gagal Bray : ".$message2);
       	      }
 	      
 		    echo "\n";	
@@ -218,9 +219,9 @@ echo "\n";
               $code2 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"'.$carv.'"}');
               $message2 = fetch_value($code2,'"message":"','"');
               if(strpos($code2, 'Promo kamu sudah bisa dipakai.')){
-        	echo "\n".color("purple","[✓] Berhasil : ".$message2);
+        	echo "\n".color("purple","[✓] Berhasil Bray : ".$message2);
       	      }else{
-        	echo "\n".color("red","[×] Gagal : ".$message2);
+        	echo "\n".color("red","[×] Gagal Bray : ".$message2);
       	      }
 	   
 
@@ -307,7 +308,7 @@ echo "\n";
 	 echo "\n";
          setpin:	 
 	 echo "\n";
-         echo color("white","[?] Mau Buat PIN ? (y/n) : ");
+         echo color("white","[?] Mau Buat PIN Bray ? (y/n) : ");
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          echo "\n";
@@ -330,7 +331,7 @@ echo "\n";
 	 //if (strpos($verifotpsetpin, 'OTP kamu tidak berlaku.')){\
 	 if (preg_match("/OTP tidak berlaku/i", $verifotpsetpin)) {
                 echo "\n";
-		echo color("red","[×] OTP PIN Salah...!!");
+		echo color("red","[×] OTP PIN Salah Njirr...!!");
 		echo "\n";
 		echo "\n";
 		echo color("white","[?] Mau Kirim Ulang Kode OTP PIN ? (y/n) : ");
@@ -367,7 +368,7 @@ echo "\n";
 	 	 echo "\n";
          die();
          }else{
-         echo color("red","[×] GAGAL...!!!\n");
+         echo color("red","[×] GAGAL Njirr...!!!\n");
 	 echo "\n";
          goto setpin;
 	 }	 
@@ -375,7 +376,7 @@ echo "\n";
 	 }
          }
          }else{
-            echo color("red","[×] Kode OTP yang dimasukkan salah !!");
+            echo color("red","[×] Kode OTP yang dimasukkan salah Njirr !!");
             echo "\n";
 	    echo "\n";
             echo color("white","[?] Mau Kirim Ulang Kode OTP ? (y/n) : ");
