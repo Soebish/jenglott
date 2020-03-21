@@ -34,6 +34,8 @@ $xlocation = 'X-Location: -6.913'.rand(4000,6500).',107.617'.rand(5000,8000);
 $xlocation = 'X-Location: -7.2600'.rand(100,999).',112.744'.rand(1000,55000);
 }else if ($clokasi == "5" ){
 $xlocation = 'X-Location: -8.12'.rand(30000,45000).',115.11'.rand(10000,25000);
+}else if ($clokasi == "6" ){
+$xlocation = 'X-Location: -7.9700'.rand(599,999).',112.63'.rand(10000,25000);
 }else{
 $xlocation = 'X-Location: -6.'.rand(111,222).'9016,106.'.rand(111,444).'7473';
 }
