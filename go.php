@@ -88,7 +88,7 @@ echo "\n";
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("purple","[➕] Token : ".$token."\n\n");
         save("token.txt",$token);
-	echo color("grey","Lokasi : ".$clokasi2);
+	echo color("grey","Lokasi : ".$clokasi2." 🇮🇩 ");
         //echo "\n";
         echo color("white","\n■■■■■■■■■■■■■■( INJECT VOUCHER )■■■■■■■■■■■■■■");
 	echo "\n";
