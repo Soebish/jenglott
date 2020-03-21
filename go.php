@@ -107,13 +107,13 @@ echo "\n";
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         	echo "\n".color("purple","[✔️] Berhasil Bray : ".$message);
-       		//goto cekk;
+       		goto lanjut;
         }else{
         echo "\n".color("red","×] Gagal Bray : ".$message);
 	echo "\n";
 	echo "\n";
 		
-	
+	lanjut:
 	echo "Time:".date('[d-m-Y] [H:i:s]');
 		echo "\n";
 	echo color("white","[!] Coba Masukkan Voucher 2");
@@ -136,7 +136,7 @@ echo "\n";
 		
 	echo "Time:".date('[d-m-Y] [H:i:s]');
 	echo "\n";
-        echo color("white","!] Coba Masukkan Voucher 3");
+        echo color("white","[!] Coba Masukkan Voucher 3");
         echo "\n".color("white","[⏳] Tunggu dulu");
         for($a=1;$a<=7;$a++){
         echo color("white",".");
