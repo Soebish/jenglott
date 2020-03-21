@@ -16,8 +16,10 @@ echo color("grey","4. SURABAYA");
 echo "\n";
 echo color("grey","5. BALI");
 echo "\n";
+echo color("grey","6. MALANG");
 echo "\n";
-echo color("white","Pilih Lokasi (1-5) ? : ");
+echo "\n";
+echo color("white","Pilih Lokasi (1-6) ? : ");
 $lokasi = trim(fgets(STDIN));
 echo "\n";
 //echo "\n";
@@ -72,8 +74,18 @@ if ($lokasi == "1" ){
   echo "\n";
   echo "\n";
   die();
+  }else if ($lokasi == "6" ){
+  $code = "Lokasi:5; Kota:MALANG;";
+  file_put_contents($filel, $code);
+  echo color("green", "[✓] Lokasi Berhasil dipilih...!!");
+  echo "\n";
+  //$x= 'X-Location: -8.12'.rand(30000,45000).',115.11'.rand(10000,25000);
+  //echo $x;
+  echo "\n";
+  echo "\n";
+  die();
 }else{
-echo color("red","Pilih 1 atau 5 aja, jgn yang lain njirrr..!");
+echo color("red","Pilih 1 atau 6 aja, jgn yang lain njirrr..!");
 echo "\n";
 goto ulangi;
 }
