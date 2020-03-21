@@ -70,7 +70,7 @@ echo "\n";
             $hp = '1'.substr(trim($nohp),0,13);
         }
     }
-        $data = '{"email":"'.$email.'@gmail.com","name":"'.$nama.'","phone":"+'.$hp.'","signed_up_country":"ID"}';
+        $data = '{"email":"'.$email.'@soeb.com","name":"'.$nama.'","phone":"+'.$hp.'","signed_up_country":"ID"}';
         $register = request("/v5/customers", null, $data);
         if(strpos($register, '"otp_token"')){
         $otptoken = getStr('"otp_token":"','"',$register);
@@ -86,7 +86,7 @@ echo "\n";
 	echo color("purple","[✔️] Berhasil Registrasi Akun\n");
         $token = getStr('"access_token":"','"',$verif);
         $uuid = getStr('"resource_owner_id":',',',$verif);
-        echo color("purple","[+] Token : ".$token."\n\n");
+        echo color("purple","[➕] Token : ".$token."\n\n");
         save("token.txt",$token);
 	echo color("grey","Lokasi : ".$clokasi2);
         //echo "\n";
@@ -207,9 +207,9 @@ echo "\n";
 	            echo "\n";
               echo color("white","Coba Masukkan Voucher Lain 2");
               echo "\n".color("white","[⏳] Tunggu dulu");
-	      	for($a=1;$a<=7;$a++){
+	      	for($a=1;$a<=8;$a++){
                 echo color("white",".");
-                sleep(2);
+                sleep(1);
                 }
               $code2 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"'.$ridev.'"}');
               $message2 = fetch_value($code2,'"message":"','"');
@@ -223,9 +223,9 @@ echo "\n";
 	      echo "\n";
 	      echo color("white","Coba Masukkan Voucher Lain 3");
               echo "\n".color("white","[⏳] Tunggu dulu");
-	      	for($a=1;$a<=7;$a++){
+	      	for($a=1;$a<=8;$a++){
                 echo color("white",".");
-                sleep(2);
+                sleep(1);
                 }
               $code2 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"'.$carv.'"}');
               $message2 = fetch_value($code2,'"message":"','"');
@@ -319,7 +319,7 @@ echo "\n";
 	 echo "\n";
          setpin:	 
 	 echo "\n";
-         echo color("white","[?] Mau Buat PIN Bray ? (y/n) : ");
+         echo color("white","[❓] Mau Buat PIN Bray ? (y/n) : ");
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          echo "\n";
@@ -345,7 +345,7 @@ echo "\n";
 		echo color("red","[🚫] OTP PIN Salah Njirr...!!");
 		echo "\n";
 		echo "\n";
-		echo color("white","[?] Mau Kirim Ulang Kode OTP PIN ? (y/n) : ");
+		echo color("white","[🔁] Mau Kirim Ulang Kode OTP PIN ? (y/n) : ");
          	$pilih2 = trim(fgets(STDIN));
 		echo "\n";
 		//echo "\n";
@@ -390,7 +390,7 @@ echo "\n";
             echo color("red","[🚫] Kode OTP yang dimasukkan salah Njirr !!");
             echo "\n";
 	    echo "\n";
-            echo color("white","[?] Mau Kirim Ulang Kode OTP ? (y/n) : ");
+            echo color("white","[🔁] Mau Kirim Ulang Kode OTP ? (y/n) : ");
             $pilih3 = trim(fgets(STDIN));
 	    //echo "\n";
         	if($pilih3 == "y" || $pilih3 == "Y"){ 
