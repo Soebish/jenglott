@@ -94,7 +94,7 @@ echo "\n";
 	echo "\n";
 	echo "\n";
 	sleep(1);
-	echo "Time:".date('[d-m-Y] [H:i:s]');
+	echo "Time:".date('d-m-Y H:i:s');
 	echo "\n";
         echo color("white","Coba Masukkan Voucher 1");
         echo "\n".color("white","[⏳] Tunggu dulu");
@@ -109,12 +109,12 @@ echo "\n";
         	echo "\n".color("purple","[✔️] Berhasil Bray : ".$message);
        		goto lanjut;
         }else{
-        echo "\n".color("red","[] Gagal Bray : ".$message);
+        echo "\n".color("red","[🚫] Gagal Bray : ".$message);
 	echo "\n";
 	echo "\n";
 		
 	lanjut:
-	echo "Time:".date('[d-m-Y] [H:i:s]');
+	echo "Time:".date('d-m-Y H:i:s');
 		echo "\n";
 	echo color("white","Coba Masukkan Voucher 2");
         echo "\n".color("white","[⏳] Tunggu dulu");
@@ -129,12 +129,12 @@ echo "\n";
         echo "\n".color("purple","[✔️] Berhasil Bray : ".$messageboba10);
         goto cekk;
         }else{
-        echo "\n".color("red","[×] Gagal Bray : ".$messageboba10);
+        echo "\n".color("red","[🚫] Gagal Bray : ".$messageboba10);
 	echo "\n";
 	echo "\n";
 		
 		
-	echo "Time:".date('[d-m-Y] [H:i:s]');
+	echo "Time:".date('d-m-Y H:i:s');
 	echo "\n";
         echo color("white","Coba Masukkan Voucher 3");
         echo "\n".color("white","[⏳] Tunggu dulu");
@@ -149,13 +149,13 @@ echo "\n";
         echo "\n".color("purple","[✔️] Berhasil Bray : ".$messageboba19);
         goto cekk;
         }else{
-        echo "\n".color("red","[×] Gagal Bray : ".$messageboba19);
+        echo "\n".color("red","[🚫] Gagal Bray : ".$messageboba19);
         
 	echo "\n";
 	echo "\n";
 	 
 	
-	echo "Time:".date('[d-m-Y] [H:i:s]');
+	echo "Time:".date('d-m-Y H:i:s');
 	echo "\n";
         //echo color("yellow","Peluang terakhir Injek Voucher.....!!");
         //echo "\n";
@@ -180,7 +180,7 @@ echo "\n";
 	      if(strpos($goride, 'Promo kamu sudah bisa dipakai.')){
         echo "\n".color("purple","[✔️] Berhasil Bray : ".$message1);
       	}else{
-        echo "\n".color("red","[×] Gagal Bray : ".$message1);
+        echo "\n".color("red","[🚫] Gagal Bray : ".$message1);
       	}
         sleep(2);
       	echo "\n";
@@ -199,7 +199,7 @@ echo "\n";
               if(strpos($code2, 'Promo kamu sudah bisa dipakai.')){
         	echo "\n".color("purple","[✔️] Berhasil Bray : ".$message2);
       	      }else{
-        	echo "\n".color("red","[×] Gagal Bray : ".$message2);
+        	echo "\n".color("red","[🚫] Gagal Bray : ".$message2);
 		//$carv = $ridev;
       	      }
 			  
@@ -216,7 +216,7 @@ echo "\n";
               if(strpos($code2, 'Promo kamu sudah bisa dipakai.')){
         	echo "\n".color("purple","[✔️] Berhasil Bray : ".$message2);
       	      }else{
-        	echo "\n".color("red","[×] Gagal Bray : ".$message2);
+        	echo "\n".color("red","[🚫] Gagal Bray : ".$message2);
       	      }
 	      
 		    echo "\n";	
@@ -232,7 +232,7 @@ echo "\n";
               if(strpos($code2, 'Promo kamu sudah bisa dipakai.')){
         	echo "\n".color("purple","[✔️] Berhasil Bray : ".$message2);
       	      }else{
-        	echo "\n".color("red","[×] Gagal Bray : ".$message2);
+        	echo "\n".color("red","[🚫] Gagal Bray : ".$message2);
       	      }
 	   
 
@@ -342,7 +342,7 @@ echo "\n";
 	 //if (strpos($verifotpsetpin, 'OTP kamu tidak berlaku.')){\
 	 if (preg_match("/OTP tidak berlaku/i", $verifotpsetpin)) {
                 echo "\n";
-		echo color("red","[×] OTP PIN Salah Njirr...!!");
+		echo color("red","[🚫] OTP PIN Salah Njirr...!!");
 		echo "\n";
 		echo "\n";
 		echo color("white","[?] Mau Kirim Ulang Kode OTP PIN ? (y/n) : ");
@@ -362,7 +362,7 @@ echo "\n";
 		echo color("white","[✔️] Berhasil Buat PIN....!!");
 	 	echo "\n";
     echo "\n";
-		echo color("purple","[!] PIN ANDA : 112233");
+		echo color("purple","PIN ENTE : 112233");
 	 	echo "\n";
 	 	echo "\n";
 		echo color("white","■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■");
@@ -379,7 +379,7 @@ echo "\n";
 	 	 echo "\n";
          die();
          }else{
-         echo color("red","[×] GAGAL Njirr...!!!\n");
+         echo color("red","[🚫] GAGAL Njirr...!!!\n");
 	 echo "\n";
          goto setpin;
 	 }	 
@@ -387,7 +387,7 @@ echo "\n";
 	 }
          }
          }else{
-            echo color("red","[×] Kode OTP yang dimasukkan salah Njirr !!");
+            echo color("red","[🚫] Kode OTP yang dimasukkan salah Njirr !!");
             echo "\n";
 	    echo "\n";
             echo color("white","[?] Mau Kirim Ulang Kode OTP ? (y/n) : ");
@@ -402,9 +402,9 @@ echo "\n";
 		}
             }
          }else{
-         echo color("red","[×] Nomor sudah teregistrasi");
+         echo color("red","[🚫] Nomor sudah teregistrasi");
          echo"\n";
-         echo color("white","[!] Silahkan registrasi kembali\n");
+         echo color("white","Silahkan registrasi kembali\n");
 	 echo"\n";
          goto ulang;
          }
