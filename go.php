@@ -387,14 +387,14 @@ echo "\n";
          goto setpin;
 	 }
 	
-	 echo color("purple","* Profil Akun * \n\n");
-	 echo color("purple","Nama      : ".$nama);
+	 echo color("grey","* Profil Akun * \n\n");
+	 echo color("grey","Nama      : ".$nama);
 	 echo "\n";
-	 echo color("purple","Email     : ".$demail);
+	 echo color("grey","Email     : ".$demail);
 	 echo "\n";
-	 echo color("purple","Nomor HP  : ".$hp);
+	 echo color("grey","Nomor HP  : ".$hp);
 	 echo "\n";
-	 echo color("purple","PIN Gopay : ".$pingo);
+	 echo color("grey","PIN Gopay : ".$pingo);
 	 echo "\n";
 	 echo "\n";
 	 echo color("white","■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■");
