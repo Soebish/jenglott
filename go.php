@@ -110,17 +110,17 @@ echo "\n";
        		goto lanjut;
         }else{
         echo "\n".color("red","[🚫] Gagal Bray : ".$message);
+	
+        lanjut:
+        echo "\n";
 	echo "\n";
-	echo "\n";
-		
-	lanjut:
 	echo "Time:".date('d-m-Y H:i:s');
 		echo "\n";
 	echo color("white","[🔧] Coba Masukkan Voucher 2");
         echo "\n".color("white","[⏳] Tunggu dulu");
         for($a=1;$a<=7;$a++){
         echo color("white",".");
-        sleep(8);
+        sleep(7);
         }
         sleep(1);
         $boba10 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"'.$codevoucher2.'"}');
