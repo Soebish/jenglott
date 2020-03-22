@@ -25,7 +25,7 @@ echo "\n";
 echo color("purple","
 Product Name   : ﾌ乇几Ꮆㄥㄖㄒ
 Version        : ㄥ丨爪丨ㄒ乇ᗪ
-Decription     : 丨几ﾌ乇匚ㄒ ᐯㄖㄩ匚卄乇尺 Ꮆㄖﾌ乇Ҝ
+Description    : 丨几ﾌ乇匚ㄒ ᐯㄖㄩ匚卄乇尺 Ꮆㄖﾌ乇Ҝ
 Created By
   ___            _                     
  / __| ___  ___ | |__                  
@@ -89,7 +89,7 @@ echo "\n";
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("purple","[➕] Token : ".$token."\n\n");
         save("token.txt",$token);
-	echo color("grey","Lokasi : ".$clokasi2." 🇮🇩 ");
+	echo color("grey","Lokasi : ".$clokasi2." (ID) ");
         //echo "\n";
         echo color("white","\n■■■■■■■■■■■■■■( INJECT VOUCHER )■■■■■■■■■■■■■■");
 	echo "\n";
@@ -195,12 +195,12 @@ echo "\n";
                 echo color("white",".");
                 sleep(3);
                 }
-              $code2 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"'.$codevoucher3.'"}');
-              $message2 = fetch_value($code2,'"message":"','"');
-              if(strpos($code2, 'Promo kamu sudah bisa dipakai.')){
-        	echo "\n".color("purple","[✔️] Berhasil Bray : ".$message2);
+              $code7 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"'.$codevoucher3.'"}');
+              $message7 = fetch_value($code7,'"message":"','"');
+              if(strpos($code7, 'Promo kamu sudah bisa dipakai.')){
+        	echo "\n".color("purple","[✔️] Berhasil Bray : ".$message7);
       	      }else{
-        	echo "\n".color("red","[🚫] Gagal Bray : ".$message2);
+        	echo "\n".color("red","[🚫] Gagal Bray : ".$message7);
 		//$carv = $ridev;
       	      }
 			  
@@ -212,12 +212,12 @@ echo "\n";
                 echo color("white",".");
                 sleep(1);
                 }
-              $code2 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"'.$ridev.'"}');
-              $message2 = fetch_value($code2,'"message":"','"');
-              if(strpos($code2, 'Promo kamu sudah bisa dipakai.')){
-        	echo "\n".color("purple","[✔️] Berhasil Bray : ".$message2);
+              $code8 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"'.$ridev.'"}');
+              $message8 = fetch_value($code8,'"message":"','"');
+              if(strpos($code8, 'Promo kamu sudah bisa dipakai.')){
+        	echo "\n".color("purple","[✔️] Berhasil Bray : ".$message8);
       	      }else{
-        	echo "\n".color("red","[🚫] Gagal Bray : ".$message2);
+        	echo "\n".color("red","[🚫] Gagal Bray : ".$message8);
       	      }
 	      
 		    echo "\n";	
@@ -228,12 +228,12 @@ echo "\n";
                 echo color("white",".");
                 sleep(1);
                 }
-              $code2 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"'.$carv.'"}');
-              $message2 = fetch_value($code2,'"message":"','"');
-              if(strpos($code2, 'Promo kamu sudah bisa dipakai.')){
-        	echo "\n".color("purple","[✔️] Berhasil Bray : ".$message2);
+              $code9 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"'.$carv.'"}');
+              $message9 = fetch_value($code2,'"message":"','"');
+              if(strpos($code9, 'Promo kamu sudah bisa dipakai.')){
+        	echo "\n".color("purple","[✔️] Berhasil Bray : ".$message9);
       	      }else{
-        	echo "\n".color("red","[🚫] Gagal Bray : ".$message2);
+        	echo "\n".color("red","[🚫] Gagal Bray : ".$message9);
       	      }
 	   
 
@@ -387,7 +387,7 @@ echo "\n";
          goto setpin;
 	 }
 	
-	 echo color("purple","Info Account  \n\n");
+	 echo color("purple","* Profil Akun * \n\n");
 	 echo color("purple","Nama      : ".$nama);
 	 echo "\n";
 	 echo color("purple","Email     : ".$demail);
