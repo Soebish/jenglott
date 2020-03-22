@@ -404,7 +404,7 @@ echo "\n";
          }else{
          echo color("red","[🚫] Nomor sudah teregistrasi");
          echo"\n";
-         echo color("white","[⚠️] Silahkan registrasi kembali\n");
+         echo color("white","[❗] Silahkan registrasi kembali\n");
 	 echo"\n";
          goto ulang;
          }
