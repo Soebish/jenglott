@@ -96,7 +96,7 @@ echo "\n";
 	sleep(1);
 	echo "Time:".date('d-m-Y H:i:s');
 	echo "\n";
-        echo color("white","Coba Masukkan Voucher 1");
+        echo color("white","[🔧] Coba Masukkan Voucher 1");
         echo "\n".color("white","[⏳] Tunggu dulu");
         for($a=1;$a<=7;$a++){
         echo color("white",".");
@@ -116,7 +116,7 @@ echo "\n";
 	lanjut:
 	echo "Time:".date('d-m-Y H:i:s');
 		echo "\n";
-	echo color("white","Coba Masukkan Voucher 2");
+	echo color("white","[🔧] Coba Masukkan Voucher 2");
         echo "\n".color("white","[⏳] Tunggu dulu");
         for($a=1;$a<=7;$a++){
         echo color("white",".");
@@ -136,7 +136,7 @@ echo "\n";
 		
 	echo "Time:".date('d-m-Y H:i:s');
 	echo "\n";
-        echo color("white","Coba Masukkan Voucher 3");
+        echo color("white","[🔧] Coba Masukkan Voucher 3");
         echo "\n".color("white","[⏳] Tunggu dulu");
         for($a=1;$a<=7;$a++){
         echo color("white",".");
@@ -159,7 +159,7 @@ echo "\n";
 	echo "\n";
         //echo color("yellow","Peluang terakhir Injek Voucher.....!!");
         //echo "\n";
-        echo color("white","Coba Masukkan Voucher 4");
+        echo color("white","[🔧] Coba Masukkan Voucher 4");
         echo "\n".color("yellow","[⏳] Yang ini Tunggu 5 Menit");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
@@ -188,7 +188,7 @@ echo "\n";
         cekk:	
 	      echo "\n";	
 	      echo "\n";
-	      echo color("white","Coba Masukkan Voucher Lain 1");
+	      echo color("white","[🔧] Coba Masukkan Voucher Lain 1");
               echo "\n".color("white","[⏳] Tunggu dulu");
 	      	for($a=1;$a<=7;$a++){
                 echo color("white",".");
@@ -205,7 +205,7 @@ echo "\n";
 			  
               echo "\n";	
 	            echo "\n";
-              echo color("white","Coba Masukkan Voucher Lain 2");
+              echo color("white","[🔧] Coba Masukkan Voucher Lain 2");
               echo "\n".color("white","[⏳] Tunggu dulu");
 	      	for($a=1;$a<=8;$a++){
                 echo color("white",".");
@@ -221,7 +221,7 @@ echo "\n";
 	      
 		    echo "\n";	
 	      echo "\n";
-	      echo color("white","Coba Masukkan Voucher Lain 3");
+	      echo color("white","[🔧] Coba Masukkan Voucher Lain 3");
               echo "\n".color("white","[⏳] Tunggu dulu");
 	      	for($a=1;$a<=8;$a++){
                 echo color("white",".");
@@ -404,7 +404,7 @@ echo "\n";
          }else{
          echo color("red","[🚫] Nomor sudah teregistrasi");
          echo"\n";
-         echo color("white","Silahkan registrasi kembali\n");
+         echo color("white","[⚠️] Silahkan registrasi kembali\n");
 	 echo"\n";
          goto ulang;
          }
