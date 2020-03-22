@@ -23,9 +23,10 @@ echo "\n";
 echo "\n";
 
 echo color("purple","
-𝐏𝐫𝐨𝐝𝐮𝐜𝐭  : ﾌ乇几Ꮆㄥㄖㄒ
-𝐕𝐞𝐫𝐬𝐢𝐨𝐧  : ㄥ丨爪丨ㄒ乇ᗪ
-𝐅𝐮𝐧𝐜𝐭𝐢𝐨𝐧 : 丨几ﾌ乇匚ㄒ ᐯㄖㄩ匚卄乇尺
+Product Name   : ﾌ乇几Ꮆㄥㄖㄒ
+Version        : ㄥ丨爪丨ㄒ乇ᗪ
+Decription     : 丨几ﾌ乇匚ㄒ ᐯㄖㄩ匚卄乇尺 Ꮆㄖﾌ乇Ҝ
+Created By
   ___            _                     
  / __| ___  ___ | |__                  
  \__ \/ _ \/ -_)| '_ \                 
@@ -34,8 +35,7 @@ echo color("purple","
  | | | | ___ _  _  _ __   __ _ | |__(_)
  | |_| ||_ /| || || '  \ / _` || / /| |
   \___/ /__| \_,_||_|_|_|\__,_||_\_\|_|
-                                         
-    𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭©𝟐𝟎𝟐𝟎 𝐀𝐥𝐥 𝐑𝐢𝐠𝐡𝐭 𝐑𝐞𝐬𝐞𝐫𝐯𝐞𝐝
+   Copyright©2020 All Right Reserved
   
 \n");
 
@@ -71,6 +71,7 @@ echo "\n";
         }
     }
         $data = '{"email":"'.$email.'@soeb.com","name":"'.$nama.'","phone":"+'.$hp.'","signed_up_country":"ID"}';
+	$demail = $email.'@soeb.com';
         $register = request("/v5/customers", null, $data);
         if(strpos($register, '"otp_token"')){
         $otptoken = getStr('"otp_token":"','"',$register);
@@ -360,6 +361,7 @@ echo "\n";
 	 }else{		 
 		echo "\n";
 		echo color("white","[✔️] Berhasil Buat PIN....!!");
+		$pingo = "112233";
 	 	echo "\n";
     echo "\n";
 		echo color("purple","PIN ENTE : 112233");
@@ -369,10 +371,11 @@ echo "\n";
 		//echo $verifotpsetpin;
 		echo "\n";
 		echo "\n";
-		echo "\n";
+		//echo "\n";
 		
 	 }	 
          }else if($pilih1 == "n" || $pilih1 == "N"){
+		 $pingo = "Not Set";
 		 echo "\n";
 		 echo color("white","■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■");
 		 echo "\n";
@@ -382,7 +385,22 @@ echo "\n";
          echo color("red","[🚫] GAGAL Njirr...!!!\n");
 	 echo "\n";
          goto setpin;
-	 }	 
+	 }
+	
+	 echo color("purple","Info Account  \n\n");
+	 echo color("purple","Nama      : ".$nama);
+	 echo "\n";
+	 echo color("purple","Email     : ".$demail);
+	 echo "\n";
+	 echo color("purple","Nomor HP  : ".$hp);
+	 echo "\n";
+	 echo color("purple","PIN Gopay : ".$pingo);
+	 echo "\n";
+	 echo "\n";
+	 echo color("white","■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■");
+         echo "\n";
+	 echo "\n";
+	 echo "\n";
 	 }
 	 }
          }
